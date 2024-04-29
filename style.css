@@ -1,0 +1,76 @@
+/* Universal  */
+* {
+  margin: 0;
+  border: 0;
+  padding: 0;
+}
+
+/* Font & Text  */
+a {
+  text-decoration: none;
+}
+.desktop a {
+  color: gray;
+}
+a:hover {
+  color: rgb(112, 102, 201); /* Change 'red' to your desired color */
+}
+body {
+  font-family: "Roboto", sans-serif;
+}
+/* Mobile */
+@media only screen and (max-width: 767px) {
+  .desktop {
+    display: none;
+  }
+  .Mobile {
+    height: 64px;
+    display: flex;
+    justify-content: space-between;
+    padding: 14px 14px 0px 14px;
+  }
+  .Mobile img {
+    height: 50px;
+  }
+}
+
+/* Desktop */
+@media only screen and (min-width: 768px) {
+  .Mobile {
+    display: none;
+  }
+  .desktop img {
+    height: 3rem;
+    width: auto;
+    padding-left: 24px;
+  }
+
+  .desktop {
+    display: flex;
+    justify-content: space-between;
+    height: 64px;
+  }
+
+  /* Right Panel */
+  .desktop .right {
+    font-size: 32px;
+    display: flex;
+    gap: 0;
+    padding: 16px 24px 16px 0px;
+  }
+  .desktop span {
+    color: gray;
+  }
+
+  /* Left Panel */
+  .desktop .left ul {
+    display: flex;
+    flex-direction: row;
+    list-style: none;
+    padding: 20px 24px;
+  }
+  .desktop .left li {
+    margin-right: 16px;
+    font-size: medium;
+  }
+}
