@@ -25,7 +25,7 @@ body {
 }
 
 /* Mobile */
-@media only screen and (max-width: 1024px) {
+@media only screen and (max-width: 768px) {
   .desktop {
     display: none;
   }
@@ -93,10 +93,13 @@ body {
     font-size: 1rem;
     color: rgb(139, 139, 255);
   }
+  .inf-mobile-img {
+    width: 100vw;
+  }
 }
 
 /* Desktop */
-@media only screen and (min-width: 1024px) {
+@media only screen and (min-width: 768px) {
   .Mobile {
     display: none;
   }
@@ -212,5 +215,8 @@ body {
   .link-information {
     font-size: 1.5rem;
     color: rgb(139, 139, 255);
+  }
+  .Information-right {
+    padding-top: 15px;
   }
 }
