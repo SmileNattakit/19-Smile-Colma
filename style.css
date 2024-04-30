@@ -25,8 +25,11 @@ body {
 }
 
 /* Mobile */
-@media only screen and (max-width: 767px) {
+@media only screen and (max-width: 1024px) {
   .desktop {
+    display: none;
+  }
+  .Information {
     display: none;
   }
   .subject {
@@ -71,14 +74,14 @@ body {
 }
 
 /* Desktop */
-@media only screen and (min-width: 768px) {
+@media only screen and (min-width: 1024px) {
   .Mobile {
     display: none;
   }
   .subject {
     font-size: 4em;
     font-weight: bold;
-    color: rgb(49, 47, 47);
+    color: rgb(85, 79, 79);
   }
   .desktop img {
     height: 3rem;
@@ -118,12 +121,11 @@ body {
     display: flex;
     background-color: rgb(197, 184, 184);
   }
-  .Banner img {
-    width: 100%;
+  .banner-img {
+    width: 60vw;
   }
   .Banner .img {
     padding: 32px 24px;
-    width: 60%;
   }
   .Banner img {
     height: 100%;
@@ -132,10 +134,10 @@ body {
     padding: 10rem 24px;
   }
   .banner-txt {
-    font-size: 50px;
+    font-size: 2rem;
   }
   .Banner button {
-    background-color: rgb(49, 47, 47);
+    background-color: rgb(73, 70, 70);
     color: white;
     padding: 8px 0px;
     font-size: large;
@@ -144,5 +146,46 @@ body {
   .Banner button:hover {
     background-color: rgb(102, 96, 96);
     cursor: pointer;
+  }
+  .Information {
+    display: flex;
+  }
+  .Information-small {
+    padding: 16px;
+    width: 40vw;
+    display: flex;
+  }
+  .Information-small:hover {
+    background-color: rgb(197, 184, 184);
+    cursor: pointer;
+  }
+  .Information-left {
+    width: 60vw;
+    padding: 32px 24px;
+  }
+  .information-main {
+    width: 60vw;
+  }
+  .information-subject2 {
+    font-size: 1.5rem;
+    font-weight: 500;
+    padding: 8px 0px;
+    color: rgb(85, 79, 79);
+  }
+  .small-box {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+    padding: 5%;
+  }
+  .information-normal-text {
+    padding: 8px 0px;
+    color: rgb(152, 170, 170);
+    font-size: 1.5rem;
+  }
+  .link-information {
+    font-size: 1.5rem;
+    color: rgb(139, 139, 255);
   }
 }
