@@ -32,6 +32,9 @@ body {
   .Information {
     display: none;
   }
+  .learning-desktop {
+    display: none;
+  }
   .subject {
     font-size: 3rem;
     font-weight: bold;
@@ -73,7 +76,7 @@ body {
   }
   .information-subject2 {
     font-size: 1.5rem;
-    font-weight: 500;
+    font-weight: 800;
     padding: 8px 0px;
     color: rgb(85, 79, 79);
   }
@@ -96,6 +99,22 @@ body {
   .inf-mobile-img {
     width: 100vw;
   }
+  .mobile-learning-box {
+    background-color: #d8d8d8;
+    padding: 16px 16px 24px 16px;
+    font-size: 2rem;
+    font-weight: 500;
+  }
+  .mobile-learning-box:hover {
+    cursor: pointer;
+  }
+  .mobile-learning-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 500px;
+    padding: 8px 16px;
+  }
 }
 
 /* Desktop */
@@ -104,11 +123,19 @@ body {
     display: none;
   }
   .subject {
-    font-size: 4em;
+    font-size: 3em;
     font-weight: bold;
-    color: rgb(85, 79, 79);
+    color: #494949;
+  }
+  .subject2 {
+    font-size: 2.5em;
+    font-weight: bold;
+    color: #494949;
   }
   .Information-mobile {
+    display: none;
+  }
+  .mobile-learning {
     display: none;
   }
   .desktop img {
@@ -147,7 +174,7 @@ body {
   }
   .Banner {
     display: flex;
-    background-color: rgb(197, 184, 184);
+    background-color: #d8d8d8;
   }
   .banner-img {
     width: 60vw;
@@ -183,6 +210,9 @@ body {
     width: 40vw;
     display: flex;
   }
+  .Information-small img {
+    height: 25%;
+  }
   .Information-small:hover {
     background-color: rgb(197, 184, 184);
     cursor: pointer;
@@ -210,7 +240,7 @@ body {
   .information-normal-text {
     padding: 8px 0px;
     color: rgb(152, 170, 170);
-    font-size: 1.5rem;
+    font-size: 1.2rem;
   }
   .link-information {
     font-size: 1.5rem;
@@ -218,5 +248,29 @@ body {
   }
   .Information-right {
     padding-top: 15px;
+  }
+  .learning-desktop {
+    background-color: #d8d8d8;
+  }
+  .learning-card {
+    width: 25vw;
+    padding: 32px 32px;
+  }
+  .desktop-card {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  .card-text {
+    padding: 16px;
+    background-color: white;
+    height: auto;
+    min-height: 180px;
+  }
+  .card-img {
+    height: auto;
+    width: 25vw;
+    cursor: pointer;
   }
 }
