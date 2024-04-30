@@ -13,16 +13,28 @@ a {
   color: gray;
 }
 a:hover {
-  color: rgb(112, 102, 201); /* Change 'red' to your desired color */
+  color: rgb(112, 102, 201);
+}
+
+.banner-txt {
+  font-weight: 600;
+  color: rgb(83, 80, 80);
 }
 body {
   font-family: "Roboto", sans-serif;
 }
+
 /* Mobile */
 @media only screen and (max-width: 767px) {
   .desktop {
     display: none;
   }
+  .subject {
+    font-size: 3rem;
+    font-weight: bold;
+    color: rgb(49, 47, 47);
+  }
+
   .Mobile {
     height: 64px;
     display: flex;
@@ -32,12 +44,41 @@ body {
   .Mobile img {
     height: 50px;
   }
+  .Banner {
+    display: flex;
+    background-color: rgb(197, 184, 184);
+    flex-direction: column;
+  }
+  .Banner img {
+    width: 100vw;
+  }
+
+  .Banner .txt {
+    padding: 32px 16px;
+    font-size: 1.5rem;
+  }
+  .Banner button {
+    background-color: rgb(150, 139, 139);
+    color: white;
+    padding: 8px 0px;
+    font-size: large;
+    width: 100%;
+  }
+  .Banner button:hover {
+    background-color: rgb(63, 60, 60);
+    cursor: pointer;
+  }
 }
 
 /* Desktop */
 @media only screen and (min-width: 768px) {
   .Mobile {
     display: none;
+  }
+  .subject {
+    font-size: 4em;
+    font-weight: bold;
+    color: rgb(49, 47, 47);
   }
   .desktop img {
     height: 3rem;
@@ -72,5 +113,36 @@ body {
   .desktop .left li {
     margin-right: 16px;
     font-size: medium;
+  }
+  .Banner {
+    display: flex;
+    background-color: rgb(197, 184, 184);
+  }
+  .Banner img {
+    width: 100%;
+  }
+  .Banner .img {
+    padding: 32px 24px;
+    width: 60%;
+  }
+  .Banner img {
+    height: 100%;
+  }
+  .Banner .txt {
+    padding: 10rem 24px;
+  }
+  .banner-txt {
+    font-size: 50px;
+  }
+  .Banner button {
+    background-color: rgb(49, 47, 47);
+    color: white;
+    padding: 8px 0px;
+    font-size: large;
+    width: 100%;
+  }
+  .Banner button:hover {
+    background-color: rgb(102, 96, 96);
+    cursor: pointer;
   }
 }
