@@ -3,6 +3,7 @@
   margin: 0;
   border: 0;
   padding: 0;
+  max-width: 100%;
 }
 
 /* Font & Text  */
@@ -40,7 +41,9 @@ body {
     font-weight: bold;
     color: rgb(49, 47, 47);
   }
-
+  .desktop-thesis {
+    display: none;
+  }
   .Mobile {
     height: 64px;
     display: flex;
@@ -104,6 +107,7 @@ body {
     padding: 16px 16px 24px 16px;
     font-size: 2rem;
     font-weight: 500;
+    color: #494949;
   }
   .mobile-learning-box:hover {
     cursor: pointer;
@@ -114,6 +118,18 @@ body {
     justify-content: space-around;
     height: 500px;
     padding: 8px 16px;
+  }
+  footer {
+    padding-top: 16px;
+    padding-bottom: 16px;
+    color: #494949;
+    margin-top: 24px;
+  }
+  .team {
+    display: none;
+  }
+  .privacy {
+    display: none;
   }
 }
 
@@ -136,6 +152,9 @@ body {
     display: none;
   }
   .mobile-learning {
+    display: none;
+  }
+  .mobile-video {
     display: none;
   }
   .desktop img {
@@ -212,6 +231,7 @@ body {
   }
   .Information-small img {
     height: 25%;
+    width: 30%;
   }
   .Information-small:hover {
     background-color: rgb(197, 184, 184);
@@ -234,13 +254,13 @@ body {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    width: 65%;
     padding: 5%;
   }
   .information-normal-text {
     padding: 8px 0px;
     color: rgb(152, 170, 170);
     font-size: 1.2rem;
+    width: auto;
   }
   .link-information {
     font-size: 1.5rem;
@@ -248,6 +268,7 @@ body {
   }
   .Information-right {
     padding-top: 15px;
+    width: px;
   }
   .learning-desktop {
     background-color: #d8d8d8;
@@ -272,5 +293,47 @@ body {
     height: auto;
     width: 25vw;
     cursor: pointer;
+  }
+  .desktop-thesis {
+    display: flex;
+  }
+  .thesis-left {
+    padding-left: 24px;
+    padding-right: 24px;
+    width: 60vw;
+  }
+  .thesis-card {
+    display: flex;
+  }
+  .thesis-right {
+    width: 40%;
+    cursor: pointer;
+    height: fit-content;
+  }
+  .thesis-card:hover {
+    background-color: #d8d8d8;
+  }
+  .thesis-img {
+    width: 35%;
+    height: auto;
+    padding: 16px;
+  }
+  .thesis-card-txt {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 65%;
+  }
+
+  footer {
+    padding-top: 16px;
+    padding-left: 24px;
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 24px;
+  }
+  .team {
+    padding-right: 10px;
+    color: #494949;
   }
 }
